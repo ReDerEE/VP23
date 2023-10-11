@@ -28,3 +28,9 @@ exports.timeOfDayET = function(){
     }
     return partOfDay
 }
+
+exports.formatTime = function(day, month, year){
+    const monthNamesET = ["Jaanuar", "Veebruar", "Märts", "Aprill", "Mai", "Juuni", "Juuli", "August", "September", "Oktoober", "November", "Detsember"];
+    let formattedTime = (day+". "+monthNamesET[month]+" "+year);
+    return formattedTime;
+};
